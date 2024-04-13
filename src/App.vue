@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Github"/>
+  <HelloWorld msg="Welcome to12131 31231 3123123 Github"/>
 </template>
 
 <script>
