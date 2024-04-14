@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to12131 31231 3123123 Github"/>
+  <div class="main _container">
+    <div class="main__vh">
+			<main-header/>
+			<main-slide/>
+		</div>
+
+  <main-page/>
+	
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainSlide from './components/MainSlide.vue'
+import MainHeader from './components/MainHeader.vue'
+import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainSlide,
+    MainHeader,
+    MainPage
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss" scoped>
+.main {
+  padding: 0px 15px;
+
+  &__vh {
+    min-height: 100vh;
+  }
 }
 </style>
